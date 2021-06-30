@@ -1,4 +1,5 @@
 package com.modernMilkMan.pages;
+
 import com.modernMilkMan.utilities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -6,15 +7,6 @@ import org.openqa.selenium.support.FindBy;
 
 
 public class LoginPage extends BasePage{
-
-
-
-       @FindBy(id= "phoneNo")
-        public WebElement mobileNumBox;
-
-
-        @FindBy(id = "password")
-        public WebElement passwordBox;
 
         @FindBy(id= "checkLogin")
         public WebElement loginButton;
@@ -37,11 +29,6 @@ public class LoginPage extends BasePage{
         Driver.get().findElement(By.xpath(dynamicLocators)).sendKeys(password);
 
     }
-
-
-
-
-
 
 
     }

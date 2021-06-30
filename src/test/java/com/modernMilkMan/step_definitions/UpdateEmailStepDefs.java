@@ -28,7 +28,6 @@ public class UpdateEmailStepDefs {
 
     }
 
-
     
     @When("the user updates the {string} as {string}")
     public void the_user_updates_the_as(String string, String string2) {

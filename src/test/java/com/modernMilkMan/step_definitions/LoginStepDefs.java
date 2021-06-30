@@ -53,18 +53,15 @@ public class LoginStepDefs {
         else
             loginPage.declineCookies.click();
 
-
     }
 
     @Then("the user verify the home page display {string}")
     public void the_user_verify_the_home_page_display(String hiMessage) {
         Homepage homepage = new Homepage();
 
-        Boolean actualText = Boolean.valueOf(hiMessage);
-        Boolean expectedText = homepage.greetingText.getText().equals("HI NERGZ");
-        assertEquals(actualText, expectedText);
-
+        assertEquals(hiMessage, homepage.greetingText.getText());
     }
+
 
     @Then("the user should see oops error message")
     //the method is used when the user enters invalid phone number or password
@@ -89,6 +86,7 @@ public class LoginStepDefs {
 
 
     }
+
 
 
 }

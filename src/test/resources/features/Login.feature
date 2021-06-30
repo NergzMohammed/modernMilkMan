@@ -4,7 +4,7 @@ Feature: User should be able to login
     Given the user is on the modernMilkMan home page
     Then the user clicks on "ACCEPT ALL" cookies
     And the user clicks Sign in button
-
+   @wip
   Scenario: User login with valid credentials
     When the user enters "Mobile number" as "07397320257"
     When the user enters "Password" as "Milkman!"

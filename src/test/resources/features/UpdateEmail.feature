@@ -1,5 +1,4 @@
 
-         @wip
 Feature: user should be able to update email
 
   Background:  the user logs in
