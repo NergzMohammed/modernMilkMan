@@ -25,7 +25,7 @@ public class LoginPage extends BasePage{
         //It is dynamic and accepts both parameters mobile number& password
 
     public void loginBoxes(String mobileNo, String password){
-            String dynamicLocators ="//label[.='"+mobileNo+"']//..//input";
+            String dynamicLocators = "//label[.='"+mobileNo+"']//..//input";
         Driver.get().findElement(By.xpath(dynamicLocators)).sendKeys(password);
 
     }

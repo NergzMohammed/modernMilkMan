@@ -7,7 +7,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class Homepage extends BasePage {
 
-    @FindBy(xpath = "//h1[.='Hi Nergz']")
+    @FindBy(xpath = "//h1[.='Hi Nono']")
     public WebElement greetingText;
 
 

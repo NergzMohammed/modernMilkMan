@@ -7,9 +7,9 @@ Feature: User should be able to login
    @wip
   Scenario: User login with valid credentials
     When the user enters "Mobile number" as "07397320257"
-    When the user enters "Password" as "Milkman!"
+    When the user enters "Password" as "milkman"
     And the user clicks on Login button
-    Then the user verify the home page display "HI NERGZ"
+    Then the user verify the home page display "HI NONO"
 
 
   Scenario Outline: Not login with invalid credentials
